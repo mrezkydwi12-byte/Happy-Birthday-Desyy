@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selamat Ulang Tahun Desyyy!!!</title>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Poppins', sans-serif;
+        background: linear-gradient(135deg, #fdf6ff, #ffeaf4);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        overflow-x: hidden;
+    }
+
+    .card {
+        background: #ffffffcc;
+        backdrop-filter: blur(10px);
+        width: 90%;
+        max-width: 430px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        position: relative;
+    }
+
+    .title {
+        font-size: 28px;
+        font-weight: 700;
+        color: #ff5ea6;
+        margin-bottom: 10px;
+    }
+
+    .photo {
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        object-fit: cover;
+        border: 5px solid #ffbcd9;
+        margin: 10px 0 20px 0;
+    }
+
+    .message {
+        font-size: 16px;
+        color: #333;
+        padding: 0 10px;
+        line-height: 1.6;
+    }
+
+    .fox {
+        width: 120px;
+        position: absolute;
+        bottom: -10px;
+        right: -10px;
+        opacity: 0.9;
+        animation: float 3s ease-in-out infinite;
+    }
+
+    .berry {
+        width: 90px;
+        position: absolute;
+        top: -10px;
+        left: -10px;
+        opacity: 0.9;
+        animation: float2 4s ease-in-out infinite;
+    }
+
+    @keyframes float {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
+        100% { transform: translateY(0); }
+    }
+
+    @keyframes float2 {
+        0% { transform: translateY(0); }
+        50% { transform: translateY(8px); }
+        100% { transform: translateY(0); }
+    }
+
+    .btn {
+        margin-top: 20px;
+        background: #ff69b4;
+        color: white;
+        padding: 12px 25px;
+        border: none;
+        border-radius: 12px;
+        font-size: 15px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: 0.3s;
+    }
+
+    .btn:hover {
+        background: #ff2d8b;
+    }
+
+</style>
+
+</head>
+<body>
+
+<div class="card">
+
+    <img class="berry" src="https://gamepedia.cursecdn.com/minecraft_gamepedia/1/12/Sweet_Berries_JE1_BE1.png" alt="berry">
+
+    <div class="title">Selamat Ulang Tahun!</div>
+
+    <!-- GANTI LINK FOTO DI SINI -->
+    <img class="photo" src="https://yt3.googleusercontent.com/0CLIy_2jYm3H0JfzeOkKz7ZdZIw5XF3HljwSMVrh6OUDu199S6ZpmUWCXeHZrLr9-FXiTnYeIA=s160-c-k-c0x00ffffff-no-rj" alt="Foto">
+
+    <p class="message">
+        Semoga hari spesialmu dipenuhi kebahagiaan, tawa, dan momen indah.  
+        Semoga semua impianmu semakin dekat, dan semua kebaikan selalu menyertaimu.  
+        Selamat ulang tahun ke-18 Desyy! Semoga hari harimu dipenuhi hal yang luar biasa!
+    </p>
+
+    <button class="btn" onclick="playEffect()">Klik Untuk Efek</button>
+
+    <img class="fox" src="https://i.pinimg.com/originals/45/09/7d/45097d81d1ceaa56e83f6b175748e686.png" alt="white fox">
+
+</div>
+
+<script>
+    function playEffect() {
+        const note = new Audio();
+        note.src = "Happy Birthday to You - piano instrumental with lyrics.mp3";
+        note.play();
+
+        alert("Semoga harimu penuh keajaiban!");
+    }
+</script>
+
+</body>
+</html>
